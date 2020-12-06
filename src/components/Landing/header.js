@@ -15,7 +15,7 @@ function Header() {
 
             <button
               onClick={() => history.push("/signup")}
-              className="btn btn-primary btn-xl text-uppercase"
+              className="btn btn-primary btn-lg text-uppercase"
             >
               {" "}
               Register
