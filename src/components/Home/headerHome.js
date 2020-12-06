@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { withFirebase } from "../Firebase";
 
 function HeaderHome({ firebase }) {
@@ -18,23 +18,23 @@ function HeaderHome({ firebase }) {
   }, []);
   console.log(currentUser);
 
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <React.Fragment>
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <div className="intro-lead-in">
+            <h4 className=" section-subheading intro-lead-in">
               Welcome Back {currentUser && currentUser.username.toUpperCase()}!
-            </div>
+            </h4>
 
-            <button
+            {/* <button
               onClick={() => history.push("/addinsdashboard")}
               className="btn btn-primary btn-xl text-uppercase"
             >
               {" "}
-              Add a new Add-in Request
-            </button>
+              Click for HOA Approval documents
+            </button> */}
           </div>
         </div>
       </header>

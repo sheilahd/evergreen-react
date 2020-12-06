@@ -6,7 +6,7 @@ import team3 from "../../assets/img/cards/testimonials-3.jpg";
 
 function Team() {
   return (
-    <section className="testimonials text-center bg-light">
+    <section className="testimonials text-center bg-light" id="team">
       <div className="container">
         <h2 className="mb-5">Our Board</h2>
         <div className="row">
@@ -21,6 +21,23 @@ function Team() {
               <p className="font-weight-light mb-0">
                 "Resident since 1989, Board Manager"
               </p>
+              <ul className="list-inline social-buttons">
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="col-lg-4">
@@ -34,6 +51,23 @@ function Team() {
               <p className="font-weight-light mb-0">
                 "Resident since 2010, Board Assistant"
               </p>
+              <ul className="list-inline social-buttons">
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="col-lg-4">
@@ -47,6 +81,23 @@ function Team() {
               <p className="font-weight-light mb-0">
                 "Resident since 2017, Accountant"
               </p>
+              <ul className="list-inline social-buttons">
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#something">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -5,7 +5,6 @@ import SignOutButton from "../SignOut";
 import * as ROUTES from "../../constants/routes";
 import * as ROLES from "../../constants/roles";
 import Nav from "react-bootstrap/Nav";
-import logo from "../../assets/img/cards/logo.png";
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
@@ -26,7 +25,7 @@ const NavigationAuth = ({ authUser }) => (
         >
           <Link to={ROUTES.HOME}>
             <div className="navbar-brand js-scroll-trigger">
-              <h4>Evergreen HOA</h4>
+              <h6>Evergreen HOA</h6>
             </div>
           </Link>
         </Nav.Item>
@@ -43,36 +42,7 @@ const NavigationAuth = ({ authUser }) => (
         Menu
         <i className="fa fa-bars"></i>
       </button>
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav text-uppercase ml-auto">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#services">
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#addinsCards">
-              Add-ins
-            </a>
-          </li>
 
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#team">
-              Team
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
           {!!authUser.roles[ROLES.ADMIN] && (
@@ -84,7 +54,7 @@ const NavigationAuth = ({ authUser }) => (
           )}
           <li className="nav-item">
             <Nav.Item as="li" className="nav-link js-scroll-trigger">
-              <Link to={ROUTES.ADDINSDASHBOARD}> DASHBOARD </Link>
+              <Link to={ROUTES.ADDINSDASHBOARD}> Requests </Link>
             </Nav.Item>
           </li>
 
@@ -106,8 +76,8 @@ const NavigationNonAuth = () => (
         href="#page-top"
       >
         <Link to={ROUTES.LANDING}>
-          <div className="navbar-brand js-scroll-trigger">
-            <h4>Evergreen HOA</h4>
+          <div className="navbar-brand js-scroll-trigger" href="#page-top">
+            <h6>Evergreen HOA</h6>
           </div>
         </Link>
       </Nav.Item>
@@ -127,29 +97,77 @@ const NavigationNonAuth = () => (
         <ul className="navbar-nav text-uppercase ml-auto">
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#services">
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#addinsCards">
-              Add-ins
+              About
             </a>
           </li>
 
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#about">
-              About
+              News
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#team">
-              Team
+              Board
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#contact">
-              Contact
+              Contact Us
             </a>
+          </li>
+          <li className="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
+              <a
+                class="dropdown-item"
+                href="https://www.townofcary.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Town of Cary
+              </a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="https://www.greatschools.org/north-carolina/cary/7674-Laurel-Park-Elementary/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Elementary School
+              </a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="https://www.greatschools.org/north-carolina/apex/3367-Salem-Middle/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Middle School
+              </a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="https://www.greatschools.org/north-carolina/cary/1907-Cary-High/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                High School
+              </a>
+            </div>
           </li>
 
           <Nav.Item as="li" className="nav-link js-scroll-trigger">

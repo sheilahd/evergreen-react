@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Table from "react-bootstrap/Table";
+
+import * as ROUTES from "../../constants/routes";
 import { compose } from "recompose";
 import { withAuthorization } from "../Session";
 import { withFirebase } from "../Firebase";
@@ -18,9 +22,9 @@ class Addins extends Component {
       category: "",
       discipline: "",
       description: "",
-      year: "",
+      qty: "",
 
-      selectedOption: "Architectural",
+      selectedOption: "Construction",
     },
   };
 
@@ -121,22 +125,27 @@ class Addins extends Component {
             className="btn btn-success"
             onClick={() => this.setState({ modalInsert: true })}
           >
-            Add your Addin Request
+            HOA Approval Request
           </button>
           <br />
           <br />
 
           {/* <-- Table --> */}
-          <div className=" header intro-lead-in">Add-in Requests List:</div>
-          <table className="table-responsive-xl table-bordered table-hover">
+          <div className=" header intro-lead-in">
+            Your Requests to HOA Board:
+          </div>
+          <Table
+            responsive="lg"
+            className="table-responsive-sm table-bordered table-hover"
+          >
             <thead className="table thead text-center">
               <tr>
-                <th>Addin Tester </th>
-                <th>Title </th>
+                <th>Neighbor Email </th>
+                <th>Document Name </th>
                 <th>Category</th>
                 <th>Discipline</th>
                 <th>Description</th>
-                <th>Revit Year</th>
+                <th>Qty</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -151,7 +160,7 @@ class Addins extends Component {
                     <td>{addin.category}</td>
                     <td>{addin.selectedOption}</td>
                     <td>{addin.description}</td>
-                    <td>{addin.year}</td>
+                    <td>{addin.qty}</td>
 
                     <td>
                       <button
@@ -174,17 +183,28 @@ class Addins extends Component {
                 );
               })}
             </tbody>
-          </table>
+          </Table>
 
-          {/* </-- Table -->
+          {/* /* </-- Table --> */}
 
-{/* <-- Modal Insert --> */}
+          <br />
+          <br />
+
+          <Link to={ROUTES.HOME}>
+            <button className="btn btn-secondary btn-sm mx-2">
+              Back to Home Page
+            </button>
+          </Link>
+
+          {/* <-- Modal Insert --> */}
           <Modal isOpen={this.state.modalInsert}>
-            <ModalHeader>Fill out the Form for your Addin Request:</ModalHeader>
+            <ModalHeader>
+              Fill out the Form for your Addin Requests:
+            </ModalHeader>
 
             <ModalBody>
               <div className="form-group">
-                <label>Addin Title: </label>
+                <label>Document Name: </label>
                 <br />
                 <input
                   type="textarea"
@@ -213,15 +233,15 @@ class Addins extends Component {
                       <input
                         type="radio"
                         name="discipline"
-                        value="Architectural"
+                        value="Construction"
                         checked={
                           this.state.inputsForm.selectedOption ===
-                          "Architectural"
+                          "Construction"
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Architectural
+                      Construction
                     </label>
                   </div>
                   <div className="radio-check">
@@ -229,14 +249,14 @@ class Addins extends Component {
                       <input
                         type="radio"
                         name="discipline"
-                        value="Engineering"
+                        value="Landscaping"
                         checked={
-                          this.state.inputsForm.selectedOption === "Engineering"
+                          this.state.inputsForm.selectedOption === "Landscaping"
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Engineering
+                      Landscaping
                     </label>
                   </div>
                 </form>
@@ -253,13 +273,13 @@ class Addins extends Component {
                   onChange={this.handleChange}
                 />
                 <br />
-                <label>Revit Compatibility Year: </label>
+                <label>Qty: </label>
                 <br />
                 <input
                   type="number"
-                  value={this.state.inputsForm.year}
+                  value={this.state.inputsForm.qty}
                   className="form-control"
-                  name="year"
+                  name="qty"
                   onChange={this.handleChange}
                 />
                 <br />
@@ -288,10 +308,10 @@ class Addins extends Component {
 
           {/* <-- Modal Edit --> */}
           <Modal isOpen={this.state.modalEdit}>
-            <ModalHeader>Edit Your Addin Request:</ModalHeader>
+            <ModalHeader>Edit Your Request:</ModalHeader>
             <ModalBody>
               <div className="form-group">
-                <label>Addin Title: </label>
+                <label>Document Name: </label>
                 <br />
                 <input
                   type="text"
@@ -322,15 +342,15 @@ class Addins extends Component {
                       <input
                         type="radio"
                         name="discipline"
-                        value="Architectural"
+                        value="Construction"
                         checked={
                           this.state.inputsForm.selectedOption ===
-                          "Architectural"
+                          "Construction"
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Architectural
+                      Construction
                     </label>
                   </div>
                   <div className="radio-check">
@@ -339,15 +359,15 @@ class Addins extends Component {
                       <input
                         type="radio"
                         name="discipline"
-                        value="Engineering "
+                        value="Landscaping "
                         checked={
                           this.state.inputsForm.selectedOption ===
-                          "Engineering "
+                          "Landscaping "
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Engineering
+                      Landscaping
                     </label>
                   </div>
                 </form>
@@ -363,13 +383,13 @@ class Addins extends Component {
                   onChange={this.handleChange}
                 />
                 <br />
-                <label> Revit Compatibility Year: </label>
+                <label> Qty: </label>
                 <br />
                 <input
                   type="number"
-                  value={this.state.inputsForm.year}
+                  value={this.state.inputsForm.qty}
                   className="form-control"
-                  name="year"
+                  name="qty"
                   onChange={this.handleChange}
                 />
                 <br />

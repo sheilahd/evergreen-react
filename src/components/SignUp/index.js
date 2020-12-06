@@ -6,16 +6,29 @@ import * as ROLES from "../../constants/roles";
 import { Row, FormGroup, FormControl } from "react-bootstrap";
 
 const SignUpPage = () => (
-  <div
-    style={{
-      position: "center",
-      width: "50%",
-      marginLeft: "20%",
-      marginTop: "10%",
-    }}
-  >
-    <h2 className="text-center">Please Sign Up</h2>
-    <SignUpForm />
+  <div className="container-fluid">
+    <div class="row no-gutter">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4 ">Register!</h3>
+
+                <SignUpForm />
+
+                <Link to={ROUTES.LANDING}>
+                  <button className="btn btn-sm btn-primary btn-login text-uppercase font-weight-bold mb-2">
+                    Back
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -90,69 +103,80 @@ class SignUpFormBase extends Component {
 
     return (
       <div className="Signup">
-        <Row>
-          <form
-            onSubmit={this.onSubmit}
-            style={{ width: "50%", marginLeft: "20%", marginTop: "10%" }}
+        <form
+          onSubmit={this.onSubmit}
+          style={{
+            position: "center",
+            width: "50%",
+            marginLeft: "20%",
+            marginTop: "10%",
+          }}
+        >
+          <FormGroup controlId="username">
+            <FormControl
+              className="form-control"
+              type="text"
+              value={username}
+              name="username"
+              placeholder="Full Name"
+              onChange={this.onChange}
+            />
+          </FormGroup>
+
+          <FormGroup id="email">
+            <FormControl
+              className="form-control"
+              name="email"
+              value={email}
+              onChange={this.onChange}
+              type="text"
+              placeholder="Email Address"
+              required
+            />
+          </FormGroup>
+
+          <FormGroup id="inputPassword">
+            <FormControl
+              name="passwordOne"
+              value={passwordOne}
+              onChange={this.onChange}
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </FormGroup>
+
+          <FormGroup id="inputPassword">
+            <FormControl
+              name="passwordTwo"
+              value={passwordTwo}
+              onChange={this.onChange}
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </FormGroup>
+
+          <label>
+            Admin:
+            <input
+              name="isAdmin"
+              type="checkbox"
+              checked={isAdmin}
+              onChange={this.onChangeCheckbox}
+            />
+          </label>
+
+          <button
+            className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+            disabled={isInvalid}
+            type="submit"
           >
-            <FormGroup controlId="username">
-              <FormControl
-                type="text"
-                value={username}
-                name="username"
-                placeholder="Full Name"
-                onChange={this.onChange}
-              />
-            </FormGroup>
-            <FormGroup controlId="email">
-              <FormControl
-                name="email"
-                value={email}
-                onChange={this.onChange}
-                type="text"
-                placeholder="Email Address"
-              />
-            </FormGroup>
-            <FormGroup controlId="password">
-              <FormControl
-                name="passwordOne"
-                value={passwordOne}
-                onChange={this.onChange}
-                type="password"
-                placeholder="Password"
-              />
-            </FormGroup>
-            <FormGroup controlId="password2">
-              <FormControl
-                name="passwordTwo"
-                value={passwordTwo}
-                onChange={this.onChange}
-                type="password"
-                placeholder="Confirm Password"
-              />
-            </FormGroup>
-            <label>
-              Admin:
-              <input
-                name="isAdmin"
-                type="checkbox"
-                checked={isAdmin}
-                onChange={this.onChangeCheckbox}
-              />
-            </label>
+            Sign Up
+          </button>
 
-            <br />
-            <button
-              className="btn btn-primary btn-md"
-              disabled={isInvalid}
-              type="submit"
-            >
-              Sign Up
-            </button>
-
-            {error && <p>{error.message}</p>}
-          </form>
-        </Row>
+          {error && <p>{error.message}</p>}
+        </form>
       </div>
     );
   }

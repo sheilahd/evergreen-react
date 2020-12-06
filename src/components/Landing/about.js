@@ -8,7 +8,7 @@ import covid from "../../assets/img/cards/covid.jpeg";
 
 function About() {
   return (
-    <div className="showcase">
+    <div className="showcase" id="about">
       <div className="container-fluid p-0">
         <div className="row no-gutters">
           <div

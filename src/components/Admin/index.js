@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
+
 import { compose } from "recompose";
+import Table from "react-bootstrap/Table";
 
 import { withFirebase } from "../Firebase";
 import { withAuthorization } from "../Session";
@@ -15,7 +17,7 @@ const AdminPage = () => (
       marginTop: "10%",
     }}
   >
-    <h4 className="text-center">List of Users and Requests: </h4>
+    <h4 className="text-center">List of Neighbors Requests: </h4>
 
     <Switch>
       <Route exact path={ROUTES.ADMIN_DETAILS} component={UserItem} />
@@ -102,7 +104,6 @@ class UserListBase extends Component {
               Tester E-Mail:<strong>{user.email}</strong>
             </span>
             <br />
-
             <span>
               {/* <Link
                 to={{
@@ -113,8 +114,12 @@ class UserListBase extends Component {
                 Details
               </Link> */}
             </span>
+
             <div className="table-responsive-md">
-              <table className="table-bordered table-secondary ">
+              <Table
+                responsive="sm"
+                className="table-bordered table-secondary "
+              >
                 <thead className="table-dark text-center">
                   <tr>
                     <th> Request Title </th>
@@ -134,10 +139,17 @@ class UserListBase extends Component {
                       );
                     })}
                 </tbody>
-              </table>
+              </Table>
+              <br />
+              <br />
             </div>
           </ul>
         ))}
+        <Link to={ROUTES.HOME}>
+          <button className="btn btn-secondary btn-sm mx-2 mb-4">
+            Back to Home Page
+          </button>
+        </Link>
       </div>
     );
   }
