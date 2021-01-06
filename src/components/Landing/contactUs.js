@@ -75,8 +75,8 @@ export default function ContactUs() {
               </div>
               <div className="form-group mb-md-0">
                 <input
-                  id="country"
-                  type="country"
+                  id="address"
+                  type="address"
                   className="form-control"
                   placeholder="Your Address *"
                   name="address"
