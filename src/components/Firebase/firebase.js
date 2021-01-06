@@ -1,6 +1,7 @@
 import app from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
+import "firebase/storage";
 
 console.log(process.env);
 
@@ -24,6 +25,7 @@ class Firebase {
     this.auth = app.auth();
     this.db = app.database();
   }
+
   // *** Auth API ***
 
   doCreateUserWithEmailAndPassword = (email, password) =>

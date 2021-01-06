@@ -22,6 +22,7 @@ function HomePage() {
       <About />
       <Team />
       <ContactUs />
+      {/* <UploadImages /> */}
       <Footer />
     </div>
   );

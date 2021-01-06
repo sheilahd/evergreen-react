@@ -5,7 +5,6 @@ import * as serviceWorker from "./serviceWorker";
 import App from "./components/App";
 import Firebase, { FirebaseContext } from "./components/Firebase";
 import "bootstrap/dist/css/bootstrap.css";
-
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/agency.min.css";
 
