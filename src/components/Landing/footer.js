@@ -5,7 +5,11 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-4">
             <span className="copyright">
-              Copyright &copy; CodeTheDream 2020
+              <p>
+                Our mailing address: <br />
+                Evergreen HOA of Cary, <br />
+                PO Box 4233, Cary, NC 27519.
+              </p>
             </span>
           </div>
           <div className="col-md-4">
@@ -28,6 +32,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-4">
+            <span className="copyright">Copyright &copy; BevaCode 2020</span>
+          </div>
+          {/* <div className="col-md-4">
             <ul className="list-inline quicklinks">
               <li className="list-inline-item">
                 <a href="#something">Privacy Policy</a>
@@ -36,7 +43,7 @@ const Footer = () => {
                 <a href="#something">Terms of Use</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
