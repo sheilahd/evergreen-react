@@ -6,10 +6,10 @@ export default function ContactUs() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_wfudfu9",
-        "template_ouoaonp",
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
         e.target,
-        "user_fK90JzbEJTGMv13DAxxP1"
+        process.env.REACT_APP_YOUR_USER_ID
       )
       .then(
         (result) => {
@@ -23,7 +23,7 @@ export default function ContactUs() {
   }
 
   return (
-    <section class="page-section" id="contact">
+    <section className="page-section" id="contact">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">Contact Us</h2>
