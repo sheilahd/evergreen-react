@@ -76,5 +76,4 @@ const UploadImages = () => {
     </div>
   );
 };
-
 export default UploadImages;

@@ -35,6 +35,7 @@ const SignUpPage = () => (
 const INITIAL_STATE = {
   username: "",
   email: "",
+
   passwordOne: "",
   passwordTwo: "",
   isAdmin: false,
@@ -89,9 +90,10 @@ class SignUpFormBase extends Component {
     const {
       username,
       email,
+
       passwordOne,
       passwordTwo,
-      isAdmin,
+
       error,
     } = this.state;
 
@@ -157,6 +159,7 @@ class SignUpFormBase extends Component {
             />
           </FormGroup>
 
+          {/* 
           <label>
             Admin:
             <input
@@ -165,7 +168,7 @@ class SignUpFormBase extends Component {
               checked={isAdmin}
               onChange={this.onChangeCheckbox}
             />
-          </label>
+          </label> */}
 
           <button
             className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"

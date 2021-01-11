@@ -52,11 +52,11 @@ const NavigationAuth = ({ authUser }) => (
               </Nav.Item>
             </li>
           )}
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Nav.Item as="li" className="nav-link js-scroll-trigger">
               <Link to={ROUTES.ADDINSDASHBOARD}> Requests </Link>
             </Nav.Item>
-          </li>
+          </li> */}
 
           <Nav.Item as="li" className="nav-link js-scroll-trigger">
             <SignOutButton />
