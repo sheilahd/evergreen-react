@@ -16,7 +16,6 @@ function HeaderHome({ firebase }) {
       }
     });
   }, []);
-  console.log(currentUser);
 
   // const history = useHistory();
   return (
