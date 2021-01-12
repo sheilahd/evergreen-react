@@ -6,10 +6,10 @@ export default function ContactUs() {
     e.preventDefault();
     emailjs
       .sendForm(
-        REACT_APP_YOUR_SERVICE_ID,
-        REACT_APP_YOUR_TEMPLATE_ID,
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
         e.target,
-        REACT_APP_YOUR_USER_ID
+        process.env.REACT_APP_YOUR_USER_ID
       )
       .then(
         (result) => {
