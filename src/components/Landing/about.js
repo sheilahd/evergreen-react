@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
-import kid from "../../assets/img/cards/bg-showcase-3.jpg";
-import christmas from "../../assets/img/cards/christmas.jpg";
-import covid from "../../assets/img/cards/covid.jpeg";
+import parks from "../../assets/img/cards/parks.jpeg";
+import fountain from "../../assets/img/cards/fountain.jpg";
+import building from "../../assets/img/cards/building.jpg";
 
 function About() {
   return (
@@ -13,14 +13,18 @@ function About() {
         <div className="row no-gutters">
           <div
             className="col-lg-6 order-lg-2 text-white showcase-img"
-            style={{ backgroundImage: `url(${christmas})` }}
+            style={{ backgroundImage: `url(${fountain})` }}
           ></div>
           <div className="col-lg-6 order-lg-1 my-auto showcase-text ">
-            <h2>Christmas Decorating Contest</h2>
+            <div className="text-center">
+              <h2>Cary Downtown</h2>
+            </div>
             <p className="lead mb-0">
-              Merry Christmas to you!! Participating homes will be photographed
-              for our Website, then voted on by residents. Voting information
-              will be updated soon.
+              "Cary is a thriving community in the heart of the Triangle area of
+              North Carolina, between Raleigh and renowned Research Triangle
+              Park. The Triangle area is repeatedly ranked among the top regions
+              in the country to live or work, to find a home or start a
+              business, to raise a family or retire."
             </p>
           </div>
         </div>
@@ -28,27 +32,36 @@ function About() {
         <div className="row no-gutters">
           <div
             className="col-lg-6 text-white showcase-img"
-            style={{ backgroundImage: `url(${covid})` }}
+            style={{ backgroundImage: `url(${building})` }}
           ></div>
           <div className="col-lg-6  my-auto showcase-text">
-            <h2>Help prevent the spread of COVID-19</h2>
+            <div className="text-center">
+              <h2>Best Place to live</h2>
+            </div>
             <p className="lead mb-0">
-              Wear a mask.Save lives. Wear a face cover Wash your hands Keep a
-              safe distance Let us know if you need Help!!!
+              "Money Magazine named Cary, North Carolina, the hottest town in
+              the East and one of six Hottest Towns in America. Cary was also
+              recognized by Money Magazine as one of the Best Small Cities in
+              America, ranking an impressive fifth on one of the magazine's
+              annual lists of Best Places to Live. As noted in several major
+              publications, Cary's accolades are numerous."
             </p>
           </div>
         </div>
         <div className="row no-gutters">
           <div
             className="col-lg-6 order-lg-2 text-white showcase-img"
-            style={{ backgroundImage: `url(${kid})` }}
+            style={{ backgroundImage: `url(${parks})` }}
           ></div>
           <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>A Parent's Guide to Conscious Discipline</h2>
+            <div className="text-center">
+              <h2>Cary Green Spaces</h2>
+            </div>
             <p className="lead mb-0">
-              A positive parenting expert explains Conscious Discipline, a new
-              parenting trend, and philosophy that is having a tremendous impact
-              on both kids and adults.
+              "In 2016, Cary was named the Gold Medal Award winner for
+              Excellence in Park and Recreation Management. This award belongs
+              to the entire Cary community. The citizens have invested
+              incredibly in this Town and continue to do so on a daily basis."
             </p>
           </div>
         </div>

@@ -6,6 +6,8 @@ const Footer = () => {
           <div className="col-md-4">
             <span className="copyright">
               <p>
+                Email: evergreenhoaofcary@gmail.com
+                <br />
                 Our mailing address: <br />
                 Evergreen HOA of Cary, <br />
                 PO Box 4233, Cary, NC 27519.

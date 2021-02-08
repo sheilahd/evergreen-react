@@ -23,9 +23,9 @@ function HeaderHome({ firebase }) {
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <h4 className=" section-subheading intro-lead-in">
+            {/* <h4 className=" section-subheading intro-lead-in">
               Welcome Back {currentUser && currentUser.username.toUpperCase()}!
-            </h4>
+            </h4> */}
 
             {/* <button
               onClick={() => history.push("/addinsdashboard")}

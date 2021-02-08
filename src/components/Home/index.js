@@ -20,7 +20,7 @@ function HomePage() {
       <Services />
 
       <About />
-      <Team />
+      {/* <Team /> */}
       <ContactUs />
       {/* <UploadImages /> */}
       <Footer />

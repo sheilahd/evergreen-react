@@ -17,7 +17,7 @@ function Landing() {
       <Services />
 
       <About />
-      <Team />
+      {/* <Team /> */}
       <ContactUs />
       <Footer />
     </div>
