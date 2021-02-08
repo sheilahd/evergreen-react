@@ -8,18 +8,18 @@ function Header() {
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <h4 className="section-subheading intro-lead-in">
+            {/* <h4 className="section-subheading intro-lead-in">
               Evergreen Community
-            </h4>
-            <h4 className="section-subheading intro-lead-in">Welcome!</h4>
+            </h4> */}
+            {/* <h4 className="section-subheading intro-lead-in">Welcome!</h4> */}
 
-            <button
+            {/* <button
               onClick={() => history.push("/signup")}
               className="btn btn-primary btn-lg text-uppercase"
             >
               {" "}
               Register
-            </button>
+            </button> */}
           </div>
         </div>
       </header>

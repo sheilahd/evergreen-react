@@ -112,7 +112,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-4">
             <div id="success"></div>
             <button
               id="sendMessageButton"
