@@ -5,7 +5,15 @@ import "../../assets/css/agency.min.css";
 import parks from "../../assets/img/cards/parks.jpeg";
 import fountain from "../../assets/img/cards/fountain.jpg";
 import building from "../../assets/img/cards/building.jpg";
-
+import { Link } from "react-router-dom";
+import lot1 from "../../docs/Evergreen Lot Map_1987_pg1.pdf";
+import lot2 from "../../docs/Evergreen Lot Map_1987_pg2.pdf";
+import architectural from "../../docs/Evergreen-Application-for-Architectural-Review - Updated 2020.docx";
+import articles from "../../docs/Evergreen-HOA-Articles-of-Incorporation.pdf";
+import covenants from "../../docs/Evergreen-HOA-Declaration-of-Protective-Covenants-Conditions-and-Restrictions.pdf";
+import lots2to5 from "../../docs/Joint Driveway and Cross Declaration, Lots 2-5.pdf";
+import lots44to49 from "../../docs/Joint Driveway and Cross Declaration, Lots 44-49.pdf";
+import lots51to56 from "../../docs/Joint Driveway and Cross Declaration, Lots 51-56.pdf";
 function About() {
   return (
     <div className="showcase" id="about">
@@ -16,16 +24,47 @@ function About() {
             style={{ backgroundImage: `url(${fountain})` }}
           ></div>
           <div className="col-lg-6 order-lg-1 my-auto showcase-text ">
-            <div className="text-center">
-              <h2>Cary Downtown</h2>
+            <div className="text-justify">
+              <h2> Public Documents:</h2>
             </div>
-            <p className="lead mb-0">
-              "Cary is a thriving community in the heart of the Triangle area of
-              North Carolina, between Raleigh and renowned Research Triangle
-              Park. The Triangle area is repeatedly ranked among the top regions
-              in the country to live or work, to find a home or start a
-              business, to raise a family or retire."
-            </p>
+
+            <div className="text-justify">
+              <a href={architectural} target="blank">
+                Evergreen Application for Architectural Review
+              </a>
+              <br />
+              <br />
+
+              <a href={lot1} target="blank">
+                Evergreen Lot Map_1987_pg1.pdf
+              </a>
+              <br />
+              <a href={lot2} target="blank">
+                Evergreen Lot Map_1987_pg2.pdf
+              </a>
+              <br />
+
+              <a href={articles} target="blank">
+                Evergreen HOA Articles of Incorporation.pdf
+              </a>
+              <br />
+              <a href={covenants} target="blank">
+                Declaration of Protective Covenants.pdf
+              </a>
+              <br />
+              <a href={lots2to5} target="blank">
+                Joint Driveway and Cross Declaration, Lots 2-5.pdf
+              </a>
+              <br />
+              <a href={lots44to49} target="blank">
+                Joint Driveway and Cross Declaration, Lots 44-49.pdf
+              </a>
+              <br />
+              <a href={lots51to56} target="blank">
+                Joint Driveway and Cross Declaration, Lots 51-56.pdf
+              </a>
+              <br />
+            </div>
           </div>
         </div>
 

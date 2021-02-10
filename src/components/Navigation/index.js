@@ -103,14 +103,14 @@ const NavigationNonAuth = () => (
 
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#about">
-              News
+              Documents
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#team">
               Board
             </a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#contact">
               Contact Us
