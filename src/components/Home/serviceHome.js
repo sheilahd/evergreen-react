@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { withFirebase } from "../Firebase";
 
-function HeaderHome({ firebase }) {
+function ServiceHome({ firebase }) {
   const [currentUser, setCurrentUser] = useState();
   useEffect(() => {
     firebase.auth.onAuthStateChanged(function (user) {
@@ -20,25 +20,20 @@ function HeaderHome({ firebase }) {
   const history = useHistory();
   return (
     <React.Fragment>
-      <header className="masthead">
-        <div className="container">
-          <div className="intro-text">
-            <h4 className=" section-subheading intro-lead-in ">
-              Welcome Back {currentUser && currentUser.username.toUpperCase()}!
-            </h4>
-
-            {/* <button
-              onClick={() => history.push("/addinsdashboard")}
-              className="btn btn-primary btn-xl text-uppercase"
-            >
-              {" "}
-              Click for HOA Approval documents
-            </button> */}
+      <section className="testimonials text-center bg-light" id="newsletters">
+        <div className="masthead">
+          <div className="container">
+            <div className="intro-text">
+              <h2 className=" section-subheading intro-lead-in ">
+                Welcome Back {currentUser && currentUser.username.toUpperCase()}
+                !
+              </h2>
+            </div>
           </div>
         </div>
-      </header>
+      </section>
     </React.Fragment>
   );
 }
 
-export default withFirebase(HeaderHome);
+export default withFirebase(ServiceHome);

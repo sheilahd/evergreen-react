@@ -4,9 +4,10 @@ import "bootstrap/dist/css/bootstrap.css";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // import "bootstrap-css-only/css/bootstrap.min.css";
 
-import HeaderHome from "./headerHome";
+import Header from "../Landing/header";
 import About from "../Landing/about";
 import Services from "../Landing/services";
+import ServiceHome from "./serviceHome";
 import Team from "../Landing/team";
 import ContactUs from "../Landing/contactUs";
 import Footer from "../Landing/footer";
@@ -17,8 +18,8 @@ import Newsletters from "./newsletters";
 function HomePage() {
   return (
     <div>
-      <HeaderHome /> */}
-      <Services />
+      <Header />
+      <ServiceHome />
       <About />
       <Newsletters />
       <ContactUs />

@@ -8,7 +8,8 @@ const Footer = () => {
               <h6>
                 Email: evergreenhoaofcary@gmail.com
                 <br />
-                Mailing address: Evergreen HOA of Cary, <br />
+                Mailing address: <br />
+                Evergreen HOA of Cary, <br />
                 PO Box 4233, Cary, NC 27519.
               </h6>
             </span>

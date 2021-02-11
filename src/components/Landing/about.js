@@ -25,7 +25,7 @@ function About() {
           ></div>
           <div className="col-lg-6 order-lg-1 my-auto showcase-text ">
             <div className="text-justify">
-              <h2> Public Documents:</h2>
+              <h2> DOCUMENTS & FORMS: </h2>
             </div>
 
             <div className="text-justify">
