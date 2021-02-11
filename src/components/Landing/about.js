@@ -2,12 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
-import parks from "../../assets/img/cards/parks.jpeg";
+import parks from "../../assets/img/cards/parks.jpg";
 import fountain from "../../assets/img/cards/fountain.jpg";
 import building from "../../assets/img/cards/building.jpg";
 import { Link } from "react-router-dom";
-import lot1 from "../../docs/Evergreen Lot Map_1987_pg1.pdf";
-import lot2 from "../../docs/Evergreen Lot Map_1987_pg2.pdf";
+import lot1 from "../../docs/Evergreen Lot Map_1987.pdf";
+
 import architectural from "../../docs/Evergreen-Application-for-Architectural-Review - Updated 2020.docx";
 import articles from "../../docs/Evergreen-HOA-Articles-of-Incorporation.pdf";
 import covenants from "../../docs/Evergreen-HOA-Declaration-of-Protective-Covenants-Conditions-and-Restrictions.pdf";
@@ -36,11 +36,7 @@ function About() {
               <br />
 
               <a href={lot1} target="blank">
-                Evergreen Lot Map_1987_pg1.pdf
-              </a>
-              <br />
-              <a href={lot2} target="blank">
-                Evergreen Lot Map_1987_pg2.pdf
+                Evergreen Lot Map_1987.pdf
               </a>
               <br />
 

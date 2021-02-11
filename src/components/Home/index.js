@@ -12,17 +12,16 @@ import ContactUs from "../Landing/contactUs";
 import Footer from "../Landing/footer";
 
 import "../../assets/css/bootstrap.min.css";
+import Newsletters from "./newsletters";
 
 function HomePage() {
   return (
     <div>
-      <HeaderHome />
+      <HeaderHome /> */}
       <Services />
-
       <About />
-      {/* <Team /> */}
+      <Newsletters />
       <ContactUs />
-      {/* <UploadImages /> */}
       <Footer />
     </div>
   );

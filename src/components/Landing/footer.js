@@ -5,13 +5,12 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-4">
             <span className="copyright">
-              <p>
+              <h6>
                 Email: evergreenhoaofcary@gmail.com
                 <br />
-                Our mailing address: <br />
-                Evergreen HOA of Cary, <br />
+                Mailing address: Evergreen HOA of Cary, <br />
                 PO Box 4233, Cary, NC 27519.
-              </p>
+              </h6>
             </span>
           </div>
           <div className="col-md-4">
