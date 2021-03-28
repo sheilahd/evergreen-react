@@ -4,7 +4,7 @@ import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
 import parks from "../../assets/img/cards/parks.jpg";
 import fountain from "../../assets/img/cards/fountain.jpg";
-import building from "../../assets/img/cards/building.jpg";
+import evergreen from "../../assets/img/cards/evergreen.jpg";
 import { Link } from "react-router-dom";
 import lot1 from "../../docs/Evergreen Lot Map_1987.pdf";
 
@@ -20,15 +20,57 @@ function About() {
       <div className="container-fluid p-0">
         <div className="row no-gutters">
           <div
-            className="col-lg-6 order-lg-2 text-white showcase-img"
-            style={{ backgroundImage: `url(${fountain})` }}
+            className="col-lg-6 text-white showcase-img"
+            style={{ backgroundImage: `url(${evergreen})` }}
           ></div>
-          <div className="col-lg-6 order-lg-1 my-auto showcase-text ">
-            <div className="text-justify">
-              <h2> DOCUMENTS & FORMS: </h2>
+          <div className="col-lg-6 order-lg-1 my-auto showcase-text">
+            <div className="row text-center">
+              <p
+                className="text-muted my-auto showcase-text text-justify mx-auto p-4 "
+                // style={{ justifyContent: "center" }}
+              >
+                <h3 className=" text-center text-muted">About Our Community</h3>
+                <div className="row text-center">
+                  <p
+                    className="text-muted my-auto showcase-text text-justify mx-auto p-4  "
+                    // style={{ justifyContent: "center" }}
+                  >
+                    Evergreen is a small community of cozy single-family homes
+                    in the heart of Cary, North Carolina. The neighborhood was
+                    established in 1987 by New Fortis Homes and is laid out in
+                    cul de sacs. The absence of through streets keeps traffic
+                    calm and the neighborhood quiet. Home sizes range from
+                    1,100-1,500 square feet and include 2-3 bedrooms, vaulted
+                    ceilings, and 1.5-2.5 bathrooms. Evergreen homeowners pay
+                    annual Homeowners Association dues to the Evergreen HOA and
+                    the Parkway Community Association. As of 2021, the Evergreen
+                    HOA dues are $145 and the Parkway Community Association dues
+                    are $87 per year. These dues are subject to change.
+                    Evergreen is situated just north of the SW Cary Parkway and
+                    Old Apex Road intersection. The entrance to the neighborhood
+                    is from SW Cary Parkway. Location, affordability, and great
+                    access to thoroughfares and nearby shopping centers make
+                    Evergreen a desirable neighborhood in the Cary area. Please
+                    contact the Evergreen HOA Board if you have any questions
+                    about the neighborhood.
+                  </p>
+                </div>
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div className="text-justify">
+        <div className="row no-gutters">
+          {/* <div
+            className="col-lg-6 order-lg-2 text-white showcase-img"
+            style={{ backgroundImage: `url(${parks})` }}
+          ></div> */}
+          <div className="col-lg-6  my-auto showcase-text">
+            <div className="text-center text-muted mb-4">
+              {/* <h3> EVERGREEN HOA </h3> */}
+              <h4> Documents & Forms: </h4>
+            </div>
+            <div className="text-center">
               <a href={architectural} target="blank">
                 Evergreen Application for Architectural Review
               </a>
@@ -62,43 +104,10 @@ function About() {
               <br />
             </div>
           </div>
-        </div>
-
-        <div className="row no-gutters">
-          <div
-            className="col-lg-6 text-white showcase-img"
-            style={{ backgroundImage: `url(${building})` }}
-          ></div>
-          <div className="col-lg-6  my-auto showcase-text">
-            <div className="text-center">
-              <h2>Best Place to live</h2>
-            </div>
-            <p className="lead mb-0">
-              "Money Magazine named Cary, North Carolina, the hottest town in
-              the East and one of six Hottest Towns in America. Cary was also
-              recognized by Money Magazine as one of the Best Small Cities in
-              America, ranking an impressive fifth on one of the magazine's
-              annual lists of Best Places to Live. As noted in several major
-              publications, Cary's accolades are numerous."
-            </p>
-          </div>
-        </div>
-        <div className="row no-gutters">
           <div
             className="col-lg-6 order-lg-2 text-white showcase-img"
-            style={{ backgroundImage: `url(${parks})` }}
+            style={{ backgroundImage: `url(${fountain})` }}
           ></div>
-          <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-            <div className="text-center">
-              <h2>Cary Green Spaces</h2>
-            </div>
-            <p className="lead mb-0">
-              "In 2016, Cary was named the Gold Medal Award winner for
-              Excellence in Park and Recreation Management. This award belongs
-              to the entire Cary community. The citizens have invested
-              incredibly in this Town and continue to do so on a daily basis."
-            </p>
-          </div>
         </div>
       </div>
     </div>
