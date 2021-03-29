@@ -25,11 +25,8 @@ function About() {
           ></div>
           <div className="col-lg-6 order-lg-1 my-auto showcase-text">
             <div className="row text-center">
-              <p
-                className="text-muted my-auto showcase-text text-justify mx-auto p-4 "
-                // style={{ justifyContent: "center" }}
-              >
-                <h3 className=" text-center text-muted">About Our Community</h3>
+              <p className="text-muted my-auto showcase-text text-center mx-auto p-4 ">
+                <h4>About Our Community</h4>
                 <div className="row text-center">
                   <p
                     className="text-muted my-auto showcase-text text-justify mx-auto p-4  "

@@ -23,7 +23,7 @@ function HeaderHome({ firebase }) {
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <h4 className=" section-subheading intro-lead-in ">
+            <h4 className=" big-intro ">
               Welcome Back {currentUser && currentUser.username.toUpperCase()}!
             </h4>
 

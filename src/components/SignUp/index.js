@@ -171,7 +171,7 @@ class SignUpFormBase extends Component {
           </label> */}
 
           <button
-            className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+            className="btn btn-lg  btn-block btn-login text-uppercase font-weight-bold mb-2"
             disabled={isInvalid}
             type="submit"
           >
