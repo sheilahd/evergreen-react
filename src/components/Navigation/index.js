@@ -78,7 +78,7 @@ const NavigationAuth = ({ authUser }) => (
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Resources
+              Schools
             </a>
             <div
               class="dropdown-menu dropdown-menu-right"
@@ -113,7 +113,7 @@ const NavigationAuth = ({ authUser }) => (
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
-                href="https://www.greatschools.org/north-carolina/cary/1907-Cary-High/"
+                href="https://www.wcpss.net/apexhs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -192,7 +192,7 @@ const NavigationNonAuth = () => (
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Resources
+              Schools
             </a>
             <div
               class="dropdown-menu dropdown-menu-right"
@@ -227,7 +227,7 @@ const NavigationNonAuth = () => (
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
-                href="https://www.greatschools.org/north-carolina/cary/1907-Cary-High/"
+                href="https://www.wcpss.net/apexhs"
                 target="_blank"
                 rel="noopener noreferrer"
               >

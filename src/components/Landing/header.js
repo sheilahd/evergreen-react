@@ -5,12 +5,12 @@ function Header() {
   const history = useHistory();
   return (
     <React.Fragment>
-      <header className="masthead" id="page-top">
-        <div className="container">
-          <div className="intro-text">
+      <header className="masthead">
+        <div className="container ">
+          <div className="intro-text" id="page-top">
             {
               <h4 className="section-subheading intro-lead-in big-intro">
-                Evergreen HOA
+                Evergreen Home Owners Association
               </h4>
             }
             {
