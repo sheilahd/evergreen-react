@@ -9,6 +9,7 @@ import oct2019 from "../../docs/newsletters/10.2019 Evergreen HOA Newsletter.pdf
 import nov2018 from "../../docs/newsletters/11.2018 Evergreen HOA Newsletter.pdf";
 import dec2019 from "../../docs/newsletters/12.2019 Evergreen HOA Newsletter.pdf";
 import spr2020 from "../../docs/newsletters/Spring 2020 Newsletter_v2.pdf";
+import sept2021 from "../../docs/newsletters/09.2021 Evergreen HOA Newsletter.pdf";
 
 function Newsletters() {
   return (
@@ -16,7 +17,7 @@ function Newsletters() {
       <div className="container">
         <h2 className="mb-5">Our Newsletters by Year:</h2>
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-3">
             <div className="testimonial-item mx-auto mb-5 mb-lg-0">
               <h5>2018</h5>
               <a href={sep2018} target="blank">
@@ -29,7 +30,7 @@ function Newsletters() {
               <br />
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-3">
             <div className="testimonial-item mx-auto mb-5 mb-lg-0">
               <h5>2019</h5>
               <a href={feb2019} target="blank">
@@ -54,11 +55,19 @@ function Newsletters() {
               <br />
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-3">
             <div className="testimonial-item mx-auto mb-5 mb-lg-0">
               <h5>2020</h5>
               <a href={spr2020} target="blank">
                 April 2020 Newsletter
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-3">
+            <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+              <h5>2021</h5>
+              <a href={sept2021} target="blank">
+                September 2021 Newsletter
               </a>
             </div>
           </div>

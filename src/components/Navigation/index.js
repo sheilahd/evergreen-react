@@ -83,7 +83,7 @@ const NavigationAuth = ({ authUser }) => (
             <div
               class="dropdown-menu dropdown-menu-right"
               aria-labelledby="navbarDropdown"
-            >
+              >
               <a
                 class="dropdown-item"
                 href="https://www.townofcary.org/"
@@ -120,6 +120,11 @@ const NavigationAuth = ({ authUser }) => (
                 High School
               </a>
             </div>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#">
+              Payments
+            </a>
           </li>
           <Nav.Item as="li" className="nav-link js-scroll-trigger">
             <SignOutButton />
@@ -172,16 +177,40 @@ const NavigationNonAuth = () => (
               Documents
             </a>
           </li>
+          <li className="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >
+              Town of Cary
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+              >
+              
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="https://www.townofcary.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Town of Cary 
+              </a>
+              </div>
+          </li>
           {/* <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#team">
               Board
             </a>
           </li> */}
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
-              Contact Us
-            </a>
-          </li>
+          
           <li className="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -198,14 +227,7 @@ const NavigationNonAuth = () => (
               class="dropdown-menu dropdown-menu-right"
               aria-labelledby="navbarDropdown"
             >
-              <a
-                class="dropdown-item"
-                href="https://www.townofcary.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Town of Cary
-              </a>
+              
               <div class="dropdown-divider"></div>
               <a
                 class="dropdown-item"
@@ -235,13 +257,23 @@ const NavigationNonAuth = () => (
               </a>
             </div>
           </li>
-
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#contact">
+              Contact Us
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#">
+              Payments
+            </a>
+          </li>
+        
           <Nav.Item as="li" className="nav-link js-scroll-trigger">
             <Link to={ROUTES.SIGN_IN} className="btn btn-primary btn-md">
               Sign In
             </Link>
           </Nav.Item>
-        </ul>
+       </ul>
       </div>
     </div>
   </nav>
