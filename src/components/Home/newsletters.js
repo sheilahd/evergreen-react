@@ -15,7 +15,7 @@ function Newsletters() {
   return (
     <section className="testimonials text-center bg-light" id="newsletters">
       <div className="container">
-        <h2 className="mb-5">Our Newsletters by Year:</h2>
+        <h2 className="mb-5">Newsletters</h2>
         <div className="row">
           <div className="col-lg-3">
             <div className="testimonial-item mx-auto mb-5 mb-lg-0">

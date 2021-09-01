@@ -65,7 +65,7 @@ function About() {
           <div className="col-lg-6  my-auto showcase-text">
             <div className="text-center text-muted mb-4">
               {/* <h3> EVERGREEN HOA </h3> */}
-              <h4> Documents & Forms: </h4>
+              <h4> Documents & Forms </h4>
             </div>
             <div className="text-center">
               <a href={architectural} target="blank">
