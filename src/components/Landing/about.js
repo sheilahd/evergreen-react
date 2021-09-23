@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
 import parks from "../../assets/img/cards/parks.jpg";
-import housesnatural from "../../assets/img/cards/housesnatural.jpg";
+import carydowntown from "../../assets/img/cards/carydowntown.jpg";
 import evergreen from "../../assets/img/cards/evergreen.jpg";
 import { Link } from "react-router-dom";
 import lot1 from "../../docs/Evergreen Lot Map_1987.pdf";
@@ -103,7 +103,7 @@ function About() {
           </div>
           <div
             className="col-lg-6 order-lg-2 text-white showcase-img"
-            style={{ backgroundImage: `url(${housesnatural})` }}
+            style={{ backgroundImage: `url(${carydowntown})` }}
           ></div>
         </div>
       </div>
